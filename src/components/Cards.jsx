@@ -9,19 +9,19 @@ const cards = [
     {
         id: 1,
         title: "Awesome Title 1",
-        image: image1,
+        imageSource: image1,
         url: 'https://google.com.mx'
     },
     {
         id: 2,
         title: "Awesome Title 2",
-        image: image2,
+        imageSource: image2,
         url: 'https://google.com.mx'
     },
     {
         id: 3,
         title: "Awesome Title 3",
-        image: image3,
+        imageSource: image3,
         url: 'https://google.com.mx'
     },
 ];
@@ -33,7 +33,7 @@ const Cards = () => {
                 {cards.map(card => (
                     <div className="col-md-4" key={card.id}>
                         <Card
-                            image={card.image}
+                            imageSource={card.imageSource}
                             title={card.title}
                             url={card.url}
                         />
