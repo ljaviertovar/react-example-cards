@@ -1,9 +1,16 @@
 import React from 'react';
+import Card from './Card';
 
 const Cards = () => {
-    return (  
-        <h1>Cards</h1>
+    return (
+        <div className="container d-flex justify-content-center h-100 align-items-center">
+            <div className="row">
+                <div className="col-md-4">
+                    <Card />
+                </div>
+            </div>
+        </div>
     );
 }
- 
+
 export default Cards;
