@@ -1,22 +1,21 @@
 import React from 'react';
 
-import image1 from '../assets/image1.jpg';
-import image2 from '../assets/image2.jpg';
-import image3 from '../assets/image3.jpg';
-
-const Card = () => {
-    return (  
-        <div className="card">
-        <img src={image1} alt=""/>
-        <div className="card-body">
-            <h4 className="card-title">My Title</h4>
-            <p className="card-text text-secondary">
-                Eu quis tempor qui officia occaecat sit cillum consequat labore. Sunt nostrud fugiat quis reprehenderit eiusmod. Quis culpa culpa velit sit do ullamco. Amet est nisi culpa tempor deserunt exercitation duis. Excepteur ex minim laborum velit consectetur culpa aliquip.
+const Card = ({ image, title, url }) => {
+    return (
+        <div className="card text-center bg-dark">
+            <img src={image} alt="" />
+            <div className="card-body text-light">
+                <h4 className="card-title">{title}</h4>
+                <p className="card-text text-secondary">
+                    Eu quis tempor qui officia occaecat sit cillum consequat labore. Sunt nostrud fugiat quis reprehenderit eiusmod. Quis culpa culpa velit sit do ullamco. Amet est nisi culpa tempor deserunt exercitation duis. Excepteur ex minim laborum velit consectetur culpa aliquip.
             </p>
-        </div>
+                <a href={url} className="btn btn-outline-secondary rounded-0" target="_blank">
+                    Go to this website
+            </a>
+            </div>
 
         </div>
     );
 }
- 
+
 export default Card;
