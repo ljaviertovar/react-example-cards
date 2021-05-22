@@ -1,6 +1,6 @@
 # :fireworks: react-example-cards 
 
-Show a list of users and a selected user using react context
+A simple card gallary
 
 ![image](https://user-images.githubusercontent.com/34925280/119210381-7dd34280-ba71-11eb-96d4-26af99dbf2df.png)
 
